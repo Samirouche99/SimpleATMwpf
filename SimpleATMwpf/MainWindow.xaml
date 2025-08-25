@@ -1,0 +1,33 @@
+﻿<Window x:Class="SimpleATMwpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleATMwpf"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="365">
+    <Grid HorizontalAlignment="Left" Width="468" Background="#FF827660">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="364*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="71*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Height="50" TextWrapping="Wrap" VerticalAlignment="Top" Width="362" FontSize="25" Background="#FFA89D9D"><Run Text=" "/><Run Language="en-gb" Text="  "/><Run Text="Simple Bank ATM"/></TextBlock>
+
+        <TextBlock HorizontalAlignment="Left" Margin="33,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="57" Width="302" TextAlignment="Center" FontSize="20"><Run Language="en-gb" Text="Enter the Customer name to stimulate entering card"/></TextBlock>
+        <TextBox x:Name="txtname" HorizontalAlignment="Left" Margin="91,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="189" Height="38"/>
+        <Button x:Name="btnInsert" Content="Insert Card" HorizontalAlignment="Center" Margin="0,252,0,0" VerticalAlignment="Top" Height="49" Width="146" FontSize="20" FontWeight="Bold" BorderBrush="Black" Background="White" Click="btnInsert_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="160,318,0,0" Text="OR" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="20"/>
+        <Button x:Name="bntAddCus" Content="*New Customer" HorizontalAlignment="Left" Height="41" Margin="114,356,0,0" VerticalAlignment="Top" Width="132" FontSize="15" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Background="White" BorderBrush="Black" Click="bntAddCus_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="1.302"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.477"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+
+    </Grid>
+</Window>

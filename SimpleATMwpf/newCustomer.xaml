@@ -1,0 +1,28 @@
+﻿<Window x:Class="SimpleATMwpf.newCustomer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleATMwpf"
+        mc:Ignorable="d"
+        Title="newCustomer" Height="450" Width="491">
+    <Grid Background="#FFFFDBDB">
+        <TextBlock HorizontalAlignment="Left" Margin="19,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="279" Foreground="Black" FontWeight="Bold" FontFamily="Calibri" FontSize="25"><Run Text="Thank you for choosing SimpleBank"/><Run Text="."/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="38" Margin="19,97,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="427" FontSize="20"><Run Language="en-gb" Text="Fill in these details to create a Credit Account:"/></TextBlock>
+        <Button x:Name="btnAdd" Content="Add Customer" HorizontalAlignment="Left" Height="64" Margin="174,328,0,0" VerticalAlignment="Top" Width="159" BorderBrush="Black" Background="White" FontSize="20" Click="btnAdd_Click"/>
+        <TextBox x:Name="txtAddName" HorizontalAlignment="Left" Height="32" Margin="113,156,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156" RenderTransformOrigin="0.722,0.357"/>
+        <TextBox x:Name="txtAddStreet" HorizontalAlignment="Left" Height="29" Margin="110,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
+        <TextBox x:Name="txtAddPostcode" HorizontalAlignment="Left" Height="32" Margin="308,289,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="101"/>
+        <TextBox x:Name="txtAddTown" HorizontalAlignment="Left" Height="34" Margin="113,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="39,157,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label Content="Address&#xD;&#xA;" HorizontalAlignment="Left" Margin="25,207,0,0" VerticalAlignment="Top" Width="80" FontSize="15" Height="38"/>
+        <Label Content="Town:" HorizontalAlignment="Left" Height="32" Margin="38,291,0,0" VerticalAlignment="Top" Width="64" FontSize="15" RenderTransformOrigin="0.628,0.301"/>
+        <Label Content="Postcode:" HorizontalAlignment="Left" Height="32" Margin="219,288,0,0" VerticalAlignment="Top" Width="85" FontSize="15"/>
+        <Label Content="Street:" HorizontalAlignment="Left" Height="32" Margin="39,243,0,0" VerticalAlignment="Top" Width="64" FontSize="15"/>
+        <TextBlock x:Name="txtOutput" HorizontalAlignment="Left" Height="63" Margin="302,194,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153"/>
+        <TextBlock x:Name="txtMessage" HorizontalAlignment="Left" Height="35" Margin="302,152,0,0" Text="Are these details correct?" TextWrapping="Wrap" VerticalAlignment="Top" Width="167" Visibility="Hidden" />
+        <Button x:Name="btnVerifyYes" Content="Yes" HorizontalAlignment="Left" Height="24" Margin="317,260,0,0" VerticalAlignment="Top" Width="35" Background="#FF98E03A" Visibility="Hidden" Click="btnVerifyYes_Click"/>
+        <Button x:Name="btnVerifyNo" Content="No" HorizontalAlignment="Left" Height="24" Margin="378,259,0,0" VerticalAlignment="Top" Width="33" Background="#FFFF1111" Visibility="Hidden" Click="btnVerifyNo_Click"/>
+
+    </Grid>
+</Window>
